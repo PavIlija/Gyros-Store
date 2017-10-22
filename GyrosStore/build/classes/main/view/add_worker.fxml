@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.HBox?>
+
+<GridPane fx:controller="controller.AddWorkerController" alignment="CENTER" hgap="50.0" prefHeight="300.0" prefWidth="300.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Unesi ime:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <TextField fx:id="txtName" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <Label text="Unesi prezime:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      <TextField fx:id="txtSurname" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+      <Label text="Unesi platu:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+      <TextField fx:id="txtSalary" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+      <Label text="Tip posla:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+      <TextField fx:id="txtTypeJob" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+      <HBox alignment="BOTTOM_RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="9">
+         <children>
+             <Button onAction="#addWorker" text="Dodaj radnika"  />
+            <Button onAction="#clearWorker" text="Obriši unos" />
+          </children>
+          
+      </HBox>
+      
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

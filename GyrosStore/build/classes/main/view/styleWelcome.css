@@ -1,0 +1,8 @@
+.root{
+    -fx-background-color:#4b9cb4;
+    
+}
+#welcomeBorderPane {
+   -fx-border-color:white ;
+    -fx-background-insets: 0, 1 ;
+}
